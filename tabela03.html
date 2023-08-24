@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+
+         <!----------ESTILO--------->
+         <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif; /*TIPO DA FONTE*/
+            }
+    
+            table {
+                width: 400px; /*LARGURA DA TABELA*/
+                border-collapse: collapse; /*ELIMINA ESPAÇO ENTRE AS CÉLULAS*/
+            }
+    
+            td, th {
+                border: 1px solid black; /*EXPESSURA E ESTILO DA BORDA DAS CÉLULAS*/
+                padding: 10px; /*DISTÂNCIA ENTRE E CONTEÚDO E AS BORDAS */
+                text-align: center; /*ALINHAMENTO DO TEXTO*/
+                
+            }
+    
+            caption {
+                font-size: 22px; /*TAMANHO DA FONTE DO TÍTULO DA TABELA*/
+                font-weight: bold; /*PESO OU INTENSIDADE DA FONTE*/
+                padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+                background-color: rgb(125, 0, 123); /*COR DO FUNDO DO TÍTULO DA TABELA*/
+            }
+    
+            thead, tfoot {
+                background-color: #ffffff; /*COR DO FUNDO DO CABEÇALHO E RODAPÈ DA TABELA*/
+                color: rgb(122, 0, 128); /*COR DA FONTE*/
+            }
+    
+            tbody > tr:nth-child(odd) { /*LINHAS ÍMPARES*/
+                background-color: rgb(116, 12, 132); /*COR DE FUNDO DA LINHA*/
+            }
+    
+            tbody > :nth-child(even) { /*LINHAS PARES*/
+                background-color: rgb(116, 12, 132); /*COR DE FUNDO DA LINHA*/
+            }
+    
+            td.num {
+                text-align: center; /*ALINHAMENTO DO TEXTO DA CLASSE "NUM"*/
+            }
+
+        </style>
+    
+        <!-----FIM ESTILO----->
+</head>
+<body>
+    <h1>MESCLAGEM DE CÉLULAS</h1>  
+
+        <table>
+
+            <tr>
+                <td>A</td>
+                <th colspan="2">B</th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">C</th>
+                <td>D</td>
+                <th rowspan="2">E</th>
+            </tr>
+
+            <tr>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">G</th>
+            </tr>
+        </table>
+</body>
+</html>
